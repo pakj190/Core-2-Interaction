@@ -1,0 +1,185 @@
+.bungee-shade-regular {
+    font-family: "Bungee Shade", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vipnagorgialla';
+    src: url('Vipnagorgialla Rg.otf') format('opentype');
+}
+
+body {
+    position: relative;
+    margin: 0;
+    color: rgb(0, 255, 0);
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    z-index: -1;
+    background-color: rgba(33, 33, 33, 0.7);
+}
+
+.title {
+    font-size: 5rem;
+    color: #fff;
+    padding: 60px;
+    text-align: center;
+    background: linear-gradient(to bottom, #2f006c, #b283b2);
+    margin: 0;
+    border-bottom: 5px solid rgb(248, 189, 229);
+    font-family: "Bungee Shade", serif;
+    animation: gradientChange 5s infinite ease-in-out;
+}
+
+@keyframes gradientChange {
+    0% {
+        background: linear-gradient(to left, magenta, blue);
+    }
+    33% {
+        background: linear-gradient(to bottom, blue, rgb(255, 0, 89));
+    }
+    66% {
+        background: linear-gradient(to right, rgb(255, 221, 141), rgb(0, 247, 255));
+    }
+    100% {
+        background: linear-gradient(to left, magenta, blue);
+    }
+}
+
+.headerTitle {
+    font-size: 3rem;
+    margin-left: 4rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: normal;
+}
+
+.paragraph1 {
+    font-size: 45px;
+    margin-left: 200px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.paragraph2 {
+    font-size: 25px;
+    margin-left: 200px;
+    max-width: 900px;
+    margin: 40px;
+    margin-top: 60rem;
+    padding-bottom: 10rem;
+}
+
+.paragraph3 {
+    font-size: 40px;
+    text-align: right;
+    max-width: 500px;
+    margin-left: 60rem;
+    font-weight: bold;
+    padding-bottom: 10rem;
+}
+
+.paragraph4 {
+    font-size: 25px;
+    text-align: left;
+    max-width: 550px;
+    margin-left: 100px;
+    padding-bottom: 10rem;
+}
+
+.paragraph5 {
+    font-size: 45px;
+    text-align: center;
+    padding-top: 30px;
+    margin: 10rem;
+    max-width: 90rem;
+    padding-bottom: 40px;
+    animation: blink 2s infinite;
+    color: white;
+    text-shadow: 0 0 10px rgb(9, 255, 0), 0 0 20px rgb(81, 255, 0), 0 0 30px rgb(0, 255, 0), 0 0 40px rgb(0, 255, 0); 
+}
+
+.forward-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: lime;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    box-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 30px lime;
+    margin: auto 10px auto 10px;
+}
+
+.forward-button:hover {
+    background-color: magenta;
+    box-shadow: 0 0 20px magenta, 0 0 30px magenta, 0 0 40px magenta;
+    color: black;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.home-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: magenta;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    box-shadow: 0 0 10px magenta, 0 0 20px magenta, 0 0 30px magenta;
+    margin: auto 10px auto 10px;
+}
+
+.home-button:hover {
+    background-color: lime;
+    box-shadow: 0 0 20px lime, 0 0 30px lime, 0 0 40px lime;
+    color: black;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.fade-in-out.visible {
+    opacity: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
