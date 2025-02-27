@@ -16,6 +16,6 @@ pressButton.addEventListener('click', () => {
     console.log(pennyImage);
 
     // set the penny image src
+    pennyImage.src = 'img/' + pennySelect.value;
     
-
 });
