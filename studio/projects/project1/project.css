@@ -28,3 +28,26 @@ button {
 button:hover {
   background-color: rgb(131, 0, 114); 
 }
+
+@media (max-width: 550px) {
+	button {
+		color: black;
+		background-color: lime;
+		margin-top: 10px;
+	}
+
+	h1 {
+		font-size: 35px;
+		max-width: 400px;
+	}
+}
+
+@media (max-width: 750px) {
+	button {
+		margin: 30px;
+	}
+
+	h1{
+		font-size: 45px;
+	}
+}
