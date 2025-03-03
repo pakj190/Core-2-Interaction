@@ -8,12 +8,23 @@ h1 {
 	font-size: 78px;
 	font-family: "Sigmar One", serif;
 	max-width: 1040px;
+	margin-bottom: 5px;
+}
+
+.h1small {
+	font-size: 50px;
+	margin-top: 2px;
 }
 
 h2 {
 	font-size: 30px;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
 
+.description {
+	font-size: 20px;
+	max-width: 800px;
+	margin-left: 50px;
 }
 
 button {
@@ -23,6 +34,7 @@ button {
 	border-radius: 10px;
 	transition: background-color 0.1s ease; 
 	border: none;
+	margin: 10px;
 }
 
 button:hover {
