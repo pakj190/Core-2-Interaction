@@ -16,3 +16,32 @@ console.log(locationSelect, colorSelect, subjectSelect);
 var submitButton = document.querySelector('button[name="submit"]');
 
 console.log(submitButton);
+
+// get the output element
+var output = document.querySelector('.output');
+
+console.log(output);
+
+// add event listener to the button
+submitButton.addEventListener('click', () => {
+
+    // get the active settings
+    var location = locationSelect.value;
+    var color = colorSelect.value;
+    var subject = subjectSelect.value;
+
+    console.log(location,color, subject);
+
+    // get the matching entry
+    var matchingEntry = entries.find((entry) => {
+        return entry.location == location
+            && entry.color
+            && entry.subject == subject;
+    });
+
+    console.log(matchingEntry);
+
+    if (matchingEntry) {
+
+    }
+})
