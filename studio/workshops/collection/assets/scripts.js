@@ -35,13 +35,15 @@ submitButton.addEventListener('click', () => {
     // get the matching entry
     var matchingEntry = entries.find((entry) => {
         return entry.location == location
-            && entry.color
+            && entry.color == color
             && entry.subject == subject;
     });
 
     console.log(matchingEntry);
 
     if (matchingEntry) {
-
+        output.innerHTML = `<img class="image" src="img/${ matchingEntry.filename }">`;
+    } else {
+        output.innerHTML = `<div class="message"> Nothin found :( </div>`;
     }
 })
